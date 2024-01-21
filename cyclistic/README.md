@@ -90,6 +90,7 @@ There are **1,751,035** total rows throughout the 3 datasets pre-cleaning and fi
 
 **I combined the 3 datasets into 1 new table called cyclistic_q2 using UNION ALL.**
 
+```sql
 -- Combine all 3 tables to get a complete Quarter 2 table.
 
 CREATE  TABLE  cyclistic_q2 (
@@ -105,9 +106,11 @@ CREATE  TABLE  cyclistic_q2 (
     SELECT  *  FROM  `cyclistic`.`june_trips`
 
 )
+```
 
 I then cleaned the new table, cyclistic_q2, by removing null and blank values. In this table, there are no null values but there ARE blank values. Columns start_station_name, start_station_id, end_station_name, end_station_id, end_lat, and end_lng have missing values.
 
+```sql
 /*
 
 Remove null and blank values. Only return rows with no null or blank values.
@@ -133,6 +136,7 @@ OR end_station_id =  ''
 OR end_lat =  ''
 
 OR end_lng =  ''
+```
 
 After removing missing values, we are left with **1,322,180 rows.**
 
@@ -160,6 +164,7 @@ I added new columns to the table to make it easier to analyze:
 
 -   route (concatenated the station that the ride started at and the station that the ride ended at to see what areas the rider passed by)
 
+```sql
 ALTER  TABLE cyclistic_q2
 
 ADD day_of_week VARCHAR(30) AS
@@ -199,16 +204,19 @@ ADD  route  VARCHAR(150);
 UPDATE cyclistic_q2
 
 SET  route  =  CONCAT(start_station_name, ' to ', end_station_name);
+```
 
 ## Metrics:
 
 **1.  The percentage of annual members vs. casual riders**
 
+```sql
 SELECT member_casual, COUNT(*) /  1322180  AS percentage_user_type
 
 FROM cyclistic_q2
 
 GROUP BY member_casual
+```
 
 ![](https://lh7-us.googleusercontent.com/6k8RX6Vl2VMzg3pjvln8oYL7Dw5eeV1pb7YDF25qDUxnPg6S8f-I2EUDOkMKJhgxbbu67xrM-5Eznpgqjr3vWp4h3CgknTW0xUPKMKWbUH52bZvU93bjqERbwo8tSUW9YvBYNwIwdPwN05rgSokEmuA)
 
@@ -220,11 +228,13 @@ GROUP BY member_casual
 
 **2.  Number of rides by bike type**
 
+```sql
 SELECT rideable_type, COUNT(*) AS total_rides
 
 FROM cyclistic_q2
 
 GROUP BY rideable_type
+```
 
 ![](https://lh7-us.googleusercontent.com/WNPJZR1_YLbRG0W8O_dImOtAM44rX6pYEcGee1LoJ0LRtlK-cc9lBdtEJMgauGtSuRvO3rqGfbmyzVrZ2mbGrHkDpn907sd8fV31Aq-NmNSvy5WZNqbDkXx9gx5_jTkr4Y42bGxagqqS8M3vY7it_cI)
 
@@ -232,11 +242,13 @@ GROUP BY rideable_type
 
 **3.  Number of rides by bike type by user type (annual member vs. casual rider)**
 
+```sql
 SELECT member_casual, rideable_type, COUNT(*) AS total_rides
 
 FROM cyclistic_q2
 
 GROUP BY member_casual, rideable_type
+```
 
 ![](https://lh7-us.googleusercontent.com/uvBE0J3R9KxqO8o0GlBmLkkWNDoO_tL4HGYrnRLeFBFt-hTeZmmuRqNgMr5boZnFlif_uaxbcKFrE3yM6-kXGEfsetHnsc6dXugYcx9ycDErhEn6DnkJzCA-_qYMrqWVUb-B74yv6RmLQuB74UZvi9Y)
 
@@ -248,6 +260,7 @@ GROUP BY member_casual, rideable_type
 
 **4.  Average ride duration by members and casual riders**
 
+```sql
 SELECT member_casual, AVG(ride_length) AS avg_ride_length
 
 FROM cyclistic_q2
@@ -255,6 +268,7 @@ FROM cyclistic_q2
 WHERE ride_length >  0  AND ride_length <  720  -- Filter out rides that were longer than 12 hours.
 
 GROUP BY member_casual
+```
 
 ![](https://lh7-us.googleusercontent.com/oHE5E1cJnUIGQQFzZQGOyGP__KgWsaANv_LeaeQBDt7oDtWJQMjkcVYdN86f-8p6UsRuKzcqVpXqAB5ocgPu6h8lnGu9ZM_GHXLtZ_JlUN6L8GW0XtnVpN21NXmEwqxI856zjE68w606aQK5jdfnedM)
 
@@ -262,6 +276,7 @@ GROUP BY member_casual
 
 **5.  The days that members and casual  riders prefer to use Cyclistic**
 
+```sql
 SELECT member_casual, day_of_week, COUNT(*) AS num_rides
 
 FROM cyclistic_q2
@@ -269,6 +284,7 @@ FROM cyclistic_q2
 GROUP BY day_of_week, member_casual
 
 ORDER BY member_casual, num_rides DESC
+```
 
 ![](https://lh7-us.googleusercontent.com/WAqzL8LwvgxZb15PsoirdyQG1455x0HwwAGS2WjGBXT4HhmA49eKASwVoa0ZcXFJtuCiv9KIQnv4uBxMyRNvtearpzP_eoiKl_duOZ6u51i6tnWtysGne-AxUq7B52RArWf7o2pv3FDtugqHEsCMT7o)
 
@@ -280,6 +296,7 @@ ORDER BY member_casual, num_rides DESC
 
 **6.  Areas that members and casual riders tend to use Cyclistic in**
 
+```sql
 SELECT member_casual, route, COUNT(*) AS num_rides
 
 FROM cyclistic_q2
@@ -303,6 +320,7 @@ GROUP BY  route
 ORDER BY num_rides DESC
 
 LIMIT  10;
+```
 
 ![](https://lh7-us.googleusercontent.com/vEWdUTUHInr-pPAP1eTsBrVBj3WFzWTkVrF4ZLrMx5nOlIgtDOjNfkGts4zDzUWbDHglQUzbYoSqqGJqYZTVtTaWyWqpU2k9ODhE0qFGtRxVjDfo1170foGzNYPL80h-whF5aI-PnkkFw2sh1-hPjbc)
 
