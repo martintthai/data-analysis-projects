@@ -115,9 +115,9 @@ Answer: 
 
 **4\. What is the most purchased item on the menu and how many times was it purchased by all customers?**
 
-```
 I used GROUP BY product_name and COUNT to find out how many times each item was purchased. I also used JOIN on sales and menu.
 
+```
 SELECT product_name, COUNT(product_name) AS times_purchased
 
 FROM  `martintthai`.`sales` sales
