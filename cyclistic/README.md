@@ -10,7 +10,7 @@ All related code can be found in my Github:
 
 ## Introduction/Background:
 
-I'll be doing my project on the data made publicly available by Cyclistic, a bike-share company based in Chicago. The company offers 3 types of pricing plans, single-ride passes, full-day passes, and annual memberships. In this project, I focus on two types of customer segments, casual riders and annual members. Cyclistic users that use single-ride and full-day passes will be referred to as casual riders, and users that have an annual membership will be referred to as members. My goal is to maximize the number of annual memberships as annual members are much more profitable than casual riders. In order to convert casual riders into annual members, I need to answer the question: How do annual members and casual riders use Cyclistic bikes differently?
+I'll be doing my project on the data made publicly available by Cyclistic, a bike-share company based in Chicago. The company offers 3 types of pricing plans, single-ride passes, full-day passes, and annual memberships. In this project, I focus on two types of customer segments, casual riders and annual members. Cyclistic users that use single-ride and full-day passes will be referred to as casual riders, and users that have an annual membership will be referred to as members. My goal is to maximize the number of annual memberships as annual members are much more profitable than casual riders. In order to convert casual riders into annual members, I need to answer the question: <mark>How do annual members and casual riders use Cyclistic bikes differently?</mark>
 
 ## What I did in a nutshell:
 
