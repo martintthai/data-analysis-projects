@@ -64,6 +64,7 @@ Columns include:
 
 **Dataset statistics:**
 
+```sql
 -- There are 426,590 rows in april_trips.
 
 SELECT  COUNT(*)
@@ -81,6 +82,7 @@ FROM  `cyclistic`.`may_trips`
 SELECT  COUNT(*)
 
 FROM  `cyclistic`.`june_trips`
+```
 
 There are **1,751,035** total rows throughout the 3 datasets pre-cleaning and filtering.
 
