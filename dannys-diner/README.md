@@ -23,23 +23,23 @@ There are 3 datasets that I will be using:
 
 -   members
 
-Below is the Entity Relationship Diagram:
+Below is the **Entity Relationship Diagram**:
 
 ![](https://lh7-us.googleusercontent.com/b3SOet8JjNY6GeoUoy86CDx27pZS2dqPLVWI2jDJmTe8GmCFSiAJ3jKLSkKM8D6TbBi5gLnJ9qEM8qj9K0HBHTWzXitLyDLy6-o--fKAP7ieBCP6lcQibvStsbeNmAdiKrU0M6OsM9uAP-VDvaY3CYc)
 
-Table 1: sales
+Table 1: **sales**
 
 The sales table contains customer_id, order_date, and product_id (refers to what menu item was ordered).
 
 ![](https://lh7-us.googleusercontent.com/TtH3t3Nm-L9kIDdIEbF-Yoi83nFenYnV1O6vfejW9DzWpdL1Na6rzeiPcW8i-2cdHVvDH8xqw8v9DqjJ9pZc3XmslLyFCKGkXIh9fKuMA7zvKyH2KJRi7RB4tzxk-pDoVSIxW8AVNmHPQkbJIzWW4EE)
 
-Table 2: menu
+Table 2: **menu**
 
 The menu table has product_id, product_name, and price.
 
 ![](https://lh7-us.googleusercontent.com/8LCh5s3xWv2KVLjg81uxOoywefC1A9SukcPaT_msNq_g039AQ1VGw2t95yMrBDFbaf66VVDFhWVgivXHCh3ej1gV02fGUWHGLmei0Ivix0SeVyEsiSJ6mGW4j6jQA1YjvaIxwXAV19qO9Zk2lzj-kQg)
 
-Table 3: members
+Table 3: **members**
 
 The members table has customer_id, and join_date (the date when the customer joined the loyalty program).
 
@@ -47,7 +47,7 @@ The members table has customer_id, and join_date (the date when the customer joi
 
 ## Questions to Answer:
 
-1\. What is the total amount each customer spent at the restaurant?
+**1\. What is the total amount each customer spent at the restaurant?**
 
 I used GROUP BY and SUM functions to find out how much each customer spent at the restaurant. In addition, I used JOIN to relate the sales and menu tables.
 
@@ -71,7 +71,7 @@ Answer: 
 
 -   Customer C spent $36.
 
-2\. How many days has each customer visited the restaurant?
+**2\. How many days has each customer visited the restaurant?**
 
 I used GROUP BY and COUNT to find out how many days each customer came to the diner.
 
@@ -93,7 +93,7 @@ Answer: 
 
 -   Customer C visited 2 times.
 
-3\. What was the first item on the menu purchased by each customer?
+**3\. What was the first item on the menu purchased by each customer?**
 
 I used GROUP BY and MIN(order_date)-> (this chooses the earliest date) to find the first item purchased by each customer.
 
@@ -109,7 +109,7 @@ Answer: 
 
 -   Customer C first ordered ramen.
 
-4\. What is the most purchased item on the menu and how many times was it purchased by all customers?
+**4\. What is the most purchased item on the menu and how many times was it purchased by all customers?**
 
 I used GROUP BY product_name and COUNT to find out how many times each item was purchased. I also used JOIN on sales and menu.
 
@@ -129,7 +129,7 @@ Answer:
 
 -   Ramen was the most purchased item (8 times).
 
-5\. Which item was the most popular for each customer?
+**5\. Which item was the most popular for each customer?**
 
 I did the same as above but instead of GROUP BY just product_name, I also grouped by customer_id.
 
@@ -155,7 +155,7 @@ Answer:
 
 -   Customer C's most popular item was ramen.
 
-6\. Which item was purchased first by each customer after they became a member?
+**6\. Which item was purchased first by each customer after they became a member?**
 
 I used JOIN twice to relate sales, menu, and members as we needed all of the data on every table. I did order_date - join_date to find the time passed until their first purchase. I then filtered using WHERE to only display the rows where join_date is before the order_date to only see orders AFTER they became a member. 
 
@@ -183,7 +183,7 @@ Answer:
 
 -   Customer C is not a member.
 
-7\. Which item was purchased just before the customer became a member?
+**7\. Which item was purchased just before the customer became a member?**
 
 I did the same as the previous query except I filtered to only select rows where join_date was after order_date to only see orders that came before they were a member. I also did join_date - order_date to find the time passed until each customer became a member.
 
@@ -211,7 +211,7 @@ Answer: 
 
 -   Customer C is not a member.
 
-8\. What is the total items and amount spent for each member before they became a member?
+**8\. What is the total items and amount spent for each member before they became a member?**
 
 I used JOIN to relate all the tables. I filtered using WHERE to only find orders that occurred before membership. I also used GROUP BY, COUNT, and SUM (two different queries for COUNT (total items) and SUM (amount spent)).
 
@@ -253,7 +253,7 @@ Answer: 
 
 -   Customer B bought 3 items and spent $40 before they became a member.
 
-9\. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
+**9\. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?**
 
  I used LEFT JOIN to relate sales, members, and menu and used CASE WHEN to convert price to points. I then used GROUP BY and SUM to find out the total points of each customer. 
 
@@ -289,7 +289,7 @@ Answer:
 
 -   Customer C has 360 total points.
 
-10\. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+**10\. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?**
 
 Step 1. I first created a temporary table with all the data including a new column (end_double_pts_week) which finds the last day where the double points interval applies.
 
