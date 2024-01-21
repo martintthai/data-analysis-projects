@@ -51,13 +51,14 @@ The members table has customer_id, and join_date (the date when the customer joi
 
 I used GROUP BY and SUM functions to find out how much each customer spent at the restaurant. In addition, I used JOIN to relate the sales and menu tables.
 
-SELECT sales.customer_id, SUM(menu.price) AS total_amt_spent
+```SELECT sales.customer_id, SUM(menu.price) AS total_amt_spent
 
 FROM  `martintthai`.`sales` sales
 
 JOIN  `martintthai`.`menu` menu ON sales.product_id = menu.product_id
 
 GROUP BY sales.customer_id
+```
 
 Query Result:
 
