@@ -3,17 +3,20 @@ Data Analytics Project: Danny's Diner
 
 In this project, I use Danny Ma's case study [here](https://8weeksqlchallenge.com/case-study-1/). Thank you Danny and if you are interested in more case studies, I suggest you give him a follow on [LinkedIn](https://www.linkedin.com/in/datawithdanny/). In this project, we will be using SQL, specifically MySql in VSCode to analyze the relevant datasets.
 
-**Introduction:**
+Introduction:
+##
 
 In this case study, I take a look at the data gathered by Danny's Diner, a Japanese restaurant that sells ramen, sushi, and curry, in the sole month of January. The goal of this project is to simulate analyzing data from a real world restaurant (by understanding visiting patterns, money spent, and popular items) and to use this data to increase sales and customer satisfaction. The problem at hand in Danny's Diner is that the diner wants to see if they should expand their existing customer loyalty program or simply resume/cut it off.
 
 What I did in a nutshell:
+##
 
 -   Leveraged MySQL and various aggregate/join functions to analyze customer data, extract actionable insights on visiting patterns, customer spending habits, and menu favorites, optimize menu offerings, and maximize profitability
 
 -   Evaluated the effectiveness of the restaurant's loyalty program using data-driven analyses, providing key recommendations for its expansion, influencing strategic decisions and driving revenue growth for the establishment
 
 Datasets:
+##
 
 There are 3 datasets that I will be using:
 
@@ -46,6 +49,7 @@ The members table has customer_id, and join_date (the date when the customer joi
 ![](https://lh7-us.googleusercontent.com/lEsWtOY_w_363HEwZmPX-TJIsPN2jQm2vA1_W1jP_2BtQk5y13Imh0snz84cV0dtRmaiVTpDDdDIj-YpcLfcv7C0bIsm7exKTKffL-14BCgWW-EW_dBFN9hMOeZSo4Vs18NNGRC_31zh0rjxmXoaIS8)
 
 Questions to Answer:
+##
 
 1\. What is the total amount each customer spent at the restaurant?
 
@@ -344,6 +348,7 @@ Answer:
 -   Customer B has 820 total points
 
 Conclusions and Final Thoughts:
+##
 
 1.  Customer A and Customer B spent the most amount of money at the diner, both spending more than Customer C. Customer A and B are also members of the loyalty program, which is a good sign that the loyalty program is bringing in more revenue.
 
