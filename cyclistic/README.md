@@ -1,6 +1,4 @@
-Martin Thai
-
-Data Analytics Project: Cyclistic
+# Data Analytics Project: Cyclistic
 
 All related code can be found in my Github:
 
@@ -10,11 +8,11 @@ All related code can be found in my Github:
 
 <https://public.tableau.com/views/CyclisticProjectDashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link>
 
-Introduction/Background:
+## Introduction/Background:
 
 I'll be doing my project on the data made publicly available by Cyclistic, a bike-share company based in Chicago. The company offers 3 types of pricing plans, single-ride passes, full-day passes, and annual memberships. In this project, I focus on two types of customer segments, casual riders and annual members. Cyclistic users that use single-ride and full-day passes will be referred to as casual riders, and users that have an annual membership will be referred to as members. My goal is to maximize the number of annual memberships as annual members are much more profitable than casual riders. In order to convert casual riders into annual members, I need to answer the question: How do annual members and casual riders use Cyclistic bikes differently?
 
-What I did in a nutshell:
+## What I did in a nutshell:
 
 -   Conducted an in-depth SQL analysis applying subqueries, joins and aggregations, and DML (data manipulation language) statements to differentiate the behaviors of annual members and casual users within a bike-share company, yielding valuable insights into the diverse ways they use the service
 
@@ -24,7 +22,7 @@ What I did in a nutshell:
 
 The data that I use is publicly available here: <https://divvy-tripdata.s3.amazonaws.com/index.html>
 
-Datasets:
+## Datasets:
 
 There are 3 csv files/datasets that I will be using:
 
@@ -86,7 +84,7 @@ FROM  `cyclistic`.`june_trips`
 
 There are 1,751,035 total rows throughout the 3 datasets pre-cleaning and filtering.
 
-Processing and cleaning the data:
+## Processing and cleaning the data:
 
 I combined the 3 datasets into 1 new table called cyclistic_q2.
 
@@ -136,7 +134,7 @@ OR end_lng =  ''
 
 After removing missing values, we are left with 1,322,180 rows.
 
-Analyzing the data:
+## Analyzing the data:
 
 From the dataset, a couple of metrics that would be useful in answering the question: How do annual members and casual riders use Cyclistic differently? are
 
@@ -200,7 +198,7 @@ UPDATE cyclistic_q2
 
 SET  route  =  CONCAT(start_station_name, ' to ', end_station_name);
 
-Metrics:
+## Metrics:
 
 1.  The percentage of annual members vs. casual riders
 
@@ -322,7 +320,7 @@ LIMIT  10;
 
 ![](https://lh7-us.googleusercontent.com/-ODJTpSbm6hTdCxml76t5-Nehh_8C3bZ23UJs9zYSjc3KpFJevtIFkyCmsHad9hpuaXwM59HZ_YmdZfB6WJ0OPldKuMpMCS_pxTC8P0zlhzJeVP5Ng87xZSfiE5o998IZ9kxieUPlaNIFexb7BAk-dw)
 
-Key takeaways from Cyclistic Quarter 2 2023 Ride Data:
+## Key takeaways from Cyclistic Quarter 2 2023 Ride Data:
 
 1.  Of the 1,322,180 rows of ride data that we looked at, 61.63% of those rides were initiated by annual members and 38.37% were initiated by casual riders. Members take a majority of quarter 2's rides, meaning optimizing profits means maximizing memberships.
 
@@ -334,7 +332,7 @@ Key takeaways from Cyclistic Quarter 2 2023 Ride Data:
 
 5.  Annual members tend to take routes that are located near residential and academic/institutional spaces while casual riders tend to take routes that are located near recreational areas and Lake Michigan, a popular lakefront with attractions nearby. This is evident in the fact that annual members tend to use Cyclistic on the weekdays (when schools and institutions are usually open) and casual riders tend to use Cyclistic on the weekend (when they have free time to explore the city).
 
-Recommendations to convert casual riders into annual members:
+## Recommendations to convert casual riders into annual members:
 
 1.  Add longer-term ride packages, such as monthly memberships that mimic some features of an annual membership
 
@@ -358,11 +356,11 @@ Recommendations to convert casual riders into annual members:
 
 -   Run digital ads across the most popular routes among casual riders. This can be either through  billboards or sponsorships with local businesses. This way, people on these scenic routes are aware of the service and can be convinced to turn to Cyclistic for their exploration of the city.
 
-Tableau Dashboard Link:
+## Tableau Dashboard Link:
 
 <https://public.tableau.com/views/CyclisticProjectDashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link>
 
-Extra:
+## Extra:
 
 Thank you for getting this far! I hope you enjoyed my project as I had a lot of fun doing it! 
 
