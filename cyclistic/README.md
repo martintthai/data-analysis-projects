@@ -14,11 +14,11 @@ I'll be doing my project on the data made publicly available by Cyclistic, a bik
 
 ## What I did in a nutshell:
 
--   Conducted an in-depth SQL analysis applying subqueries, joins and aggregations, and DML (data manipulation language) statements to differentiate the behaviors of annual members and casual users within a bike-share company, yielding valuable insights into the diverse ways they use the service
+-   Conducted **SQL** analyses of users within a bike-share company, applying subqueries, joins and aggregations, and DML (data manipulation language) statements to differentiate behaviors of annual members and casual users, providing valuable insights into the diverse ways they use the service
 
--   Managed end-to-end data operations, including cleaning, processing, and analysis, incorporating factors such as ride duration, origin-destination patterns, and the days users typically use the bike-share service
+-   Managed end-to-end data operations, including cleaning, processing, and analysis, creating relevant measures such as ride duration, origin-destination patterns, and the days users typically use the bike-share service
 
--   Utilized data-driven insights to create a dashboard analyzing key metrics in Tableau, recommending flexible membership options to accommodate diverse preferences and targeted marketing initiatives for specific user segments, with the goal of converting casual users into annual members to drive increased revenue
+-   Built a **Tableau** dashboard highlighting key metrics and recommended flexible membership options/targeted marketing strategies for different user segments, with the goal of converting casual users into annual members to drive revenue
 
 The data that I use is publicly available here: <https://divvy-tripdata.s3.amazonaws.com/index.html>
 
