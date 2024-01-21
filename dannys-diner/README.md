@@ -9,9 +9,9 @@ In this case study, I take a look at the data gathered by Danny's Diner, a Japan
 
 ## What I did in a nutshell:
 
--   Leveraged MySQL and various aggregate/join functions to analyze customer data, extract actionable insights on visiting patterns, customer spending habits, and menu favorites, optimize menu offerings, and maximize profitability
+-   Leveraged MySQL’s aggregate/join functions and CTEs, analyzing customer data, extracting actionable insights on visiting patterns, spending habits, and menu favorites to optimize menu offerings and maximize profitability
 
--   Evaluated the effectiveness of the restaurant's loyalty program using data-driven analyses, providing key recommendations for its expansion, influencing strategic decisions and driving revenue growth for the establishment
+-   Evaluated effectiveness of restaurant’s loyalty program using data-driven analyses and suggested recommendations for its expansion, influencing strategic decisions and driving revenue growth for the establishment
 
 ## Datasets:
 
