@@ -1,4 +1,4 @@
-# Martin Thai's Data Analysis Projects
+# Martin Thai's Data Analysis Projects :star_struck:
 **All my data related projects, in one place!**
 | Project        | Description  |
 | ------------- |:-------------:| 
