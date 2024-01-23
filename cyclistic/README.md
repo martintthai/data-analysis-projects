@@ -1,4 +1,4 @@
-# Data Analytics Project: Cyclistic
+# Data Analytics Project: Cyclistic :bicyclist:
 
 **All related code can be found in my Github:**
 
