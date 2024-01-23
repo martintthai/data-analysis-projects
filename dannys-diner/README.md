@@ -1,4 +1,4 @@
-Data Analytics Project: Danny's Diner
+Data Analytics Project: Danny's Diner :man_cook:
 ======
 
 In this project, I use Danny Ma's case study [here](https://8weeksqlchallenge.com/case-study-1/). Thank you Danny and if you are interested in more case studies, I suggest you give him a follow on [LinkedIn](https://www.linkedin.com/in/datawithdanny/). In this project, we will be using SQL, specifically MySql in VSCode to analyze the relevant datasets.
