@@ -77,7 +77,7 @@ Answer: 
 
 I used GROUP BY and COUNT to find out how many days each customer came to the diner.
 
-```
+```sql
 SELECT customer_id, COUNT(DISTINCT(order_date)) AS days_visited
 
 FROM  `martintthai`.`sales` sales
@@ -117,7 +117,7 @@ Answer: 
 
 I used GROUP BY product_name and COUNT to find out how many times each item was purchased. I also used JOIN on sales and menu.
 
-```
+```sql
 SELECT product_name, COUNT(product_name) AS times_purchased
 
 FROM  `martintthai`.`sales` sales
@@ -139,7 +139,7 @@ Answer:
 
 I did the same as above but instead of GROUP BY just product_name, I also grouped by customer_id.
 
-```
+```sql
 SELECT customer_id, product_name, COUNT(product_name) AS times_purchased
 
 FROM  `martintthai`.`sales` sales
@@ -167,7 +167,7 @@ Answer:
 
 I used JOIN twice to relate sales, menu, and members as we needed all of the data on every table. I did order_date - join_date to find the time passed until their first purchase. I then filtered using WHERE to only display the rows where join_date is before the order_date to only see orders AFTER they became a member. 
 
-```
+```sql
 SELECT  *, order_date-join_date AS time_passed_til_first_purchase
 
 FROM  `martintthai`.`sales` sales
@@ -197,7 +197,7 @@ Answer:
 
 I did the same as the previous query except I filtered to only select rows where join_date was after order_date to only see orders that came before they were a member. I also did join_date - order_date to find the time passed until each customer became a member.
 
-```
+```sql
 SELECT  *, join_date - order_date AS time_passed_til_became_member
 
 FROM  `martintthai`.`sales` sales
@@ -227,7 +227,7 @@ Answer: 
 
 I used JOIN to relate all the tables. I filtered using WHERE to only find orders that occurred before membership. I also used GROUP BY, COUNT, and SUM (two different queries for COUNT (total items) and SUM (amount spent)).
 
-```
+```sql
 SELECT sales.customer_id, COUNT(sales.product_id) AS total_items_bought
 
 FROM  `martintthai`.`sales` sales
@@ -245,7 +245,7 @@ Query Result:
 
 ![](https://lh7-us.googleusercontent.com/9wMqzmuJ306y1OvNqQESnzE_1jxeciJfFmYWTsVYA21N2pnCj9zd57PWzjnHp93Jms9s8Xz3cc8NtqH0ELZolx-8k0nU84ZXcA6Ti1JgGfRA91GDiBi931M3r7VzeQYIkIRbxrHoSnqfe7amu6WQPJ8)
 
-```
+```sql
 SELECT sales.customer_id, SUM(menu.price) AS total_amt_spent
 
 FROM  `martintthai`.`sales` sales
@@ -275,7 +275,7 @@ Answer: 
 
 For the CASE WHEN statement, when product_id = 1 (which is sushi) then the total points is price * 2 * 10 (because each dollar is worth 10 points and sushi points are doubled). The rest of the product ids (2 and 3) are just price * 10.
 
-```
+```sql
 SELECT sales.customer_id,
 
 SUM(CASE  WHEN sales.product_id =  1  THEN price *  20
@@ -315,7 +315,7 @@ Step 2. I then used this table and a CASE WHEN statement to double all points on
 
 Step 3. I used GROUP BY  to group by customer and filtered using WHERE to only select orders in the month of January.
 
-```
+```sql
 WITH sales_with_membership_wk AS
 
     (SELECT sales.customer_id,
