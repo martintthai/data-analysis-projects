@@ -46,13 +46,13 @@ Pivot table:
 
 ![](https://lh7-us.googleusercontent.com/SX6Vi8yvup5wogWzfImNmXRkWw1S-BpFKiYSdk_4cAtEa7rXThHYGJzjMyBWYjOTwUVAAiGa__HRht7UsZbHE2aH867O5TJHoF6s2xJY3T76gaqupQVHNeIMryMWC8rKo-hhCZm3e1zdtXUatBYjI5g)
 
-**1.  Commute distance**
+**2.  Commute distance**
 
 ![](https://lh7-us.googleusercontent.com/z_RwqiEVo8E5b8F--tHOPNLB91vGzCo0aNizCfiiVfp7IKeXayRS95SG3R-BIdMbzZdJi0QQn6YHkNsrHwW46YwSozFE_0E5ZQ0yMqKuKHNcZ-J1pgYcq9O-JtiyWM0-YmQrjTK2ILzrQkOw3rCqeR4)
 
 ![](https://lh7-us.googleusercontent.com/c9nm_8FxbUODbcTK_tNUQ_ayTwiVXvOUtVLDnVvgGVM-is1Z8MggwqznmmCt-jnH1fSsbip5RmqdpmkdvwL6i_DUbKgNGPWXz9btulVhAsfuv6kbOqiI2qhT4p78QQ3HXPhF4kYKE0D-mGrhoACBUNE)
 
-**1.  Age bracket**
+**3.  Age bracket**
 
 ![](https://lh7-us.googleusercontent.com/hDMAdlxOUMMmeyIEyP4iLUP8IJYqGga8b89dSM-Yvo1FTX5S7_ejA9ONvsr1nk0rrLX5V0aixzuY_tH6Hy746OgvdccGSP7bs6LxPeB6gRcdLgiP61sTgehn26zAkttBerZrTFlAOMRg6u56ZzchF7U)
 
