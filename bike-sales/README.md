@@ -78,7 +78,7 @@ I used these charts to create a comprehensive dashboard with marital status, reg
 
 ![](https://lh7-us.googleusercontent.com/AJcLzCBkYVBSIAngs8TbWGfPmafbDeeSUgeegPvmq25N__H90Kj8Pz91tmWO08oSC7fUc2ok_Oqe9i9t8FAOH2nUSZ3ubigdyWOC2nMZu0UDJHOsWGDjAr50Y1O6GovV299jvJWe51grZGRYjqTu_l0)
 
-1.  Customers that had a Bachelor's degree more often than not did not purchase a bike. Maybe a Bachelor's degree led to higher income which led to the ability to purchase a car, therefore not requiring a bike for travel?
+2.  Customers that had a Bachelor's degree more often than not did not purchase a bike. Maybe a Bachelor's degree led to higher income which led to the ability to purchase a car, therefore not requiring a bike for travel?
 
 ![](https://lh7-us.googleusercontent.com/Rrn5iL_cwsdiZEPDkLcUj3SRzVi5Ut7ataYu9xahiPSAwLQNLLls5E2HddoH6dZPTWqxGEAJh2f74_ZXIE7895TFCiWN7nNO4mMPaCfuixqYXJcR0cvF9k7uTYovm8_ZwDbwUdAxygePc3xy6R3uQHI)
 
