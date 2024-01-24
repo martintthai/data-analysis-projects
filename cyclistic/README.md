@@ -14,7 +14,7 @@ I'll be doing my project on the data made publicly available by Cyclistic, a bik
 
 ## What I did in a nutshell:
 
--   Conducted **SQL** analyses of users within a bike-share company, applying subqueries, joins and aggregations, and DML (data manipulation language) statements to differentiate behaviors of annual members and casual users, providing valuable insights into the diverse ways they use the service
+-   Conducted **SQL** analyses on a dataset of over 1.5 million rides of a bike-share service in Chicago, applying subqueries, joins and aggregations, and DML (data manipulation language) statements, to differentiate behavior between annual members and casual users
 
 -   Managed end-to-end data operations, including cleaning, processing, and analysis, creating relevant measures such as ride duration, origin-destination patterns, and the days users typically use the bike-share service
 
