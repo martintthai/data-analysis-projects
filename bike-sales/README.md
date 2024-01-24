@@ -1,4 +1,4 @@
-# Bike Sales Analysis (Excel Project) :mountain_bicyclist:
+# Bike Sales by Demographic Analysis (Excel Project) :mountain_bicyclist:
 
 ***Below I have linked the Excel sheet's GitHub location if you want to follow along with the writeup.**
 
