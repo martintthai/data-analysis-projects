@@ -6,9 +6,9 @@ Python
 Python Pandas
 Python Matplotlib
 ## Skills applied:
-Data analysis
-Data pre-processing
-Data visualization
+- Data analysis
+- Data pre-processing
+- Data visualization
 ## Data cleaning
 - Remove NaN values
 - Remove rows based on condition
