@@ -5,7 +5,7 @@ In this project, I use Python, Pandas, and Matplotlib to analyze and answer busi
 - Data analysis
 - Data pre-processing
 - Data visualization
-##### Tools Used:
+### Tools Used:
 - Python
 - Python Pandas
 - Python Matplotlib
@@ -13,10 +13,10 @@ In this project, I use Python, Pandas, and Matplotlib to analyze and answer busi
 - Remove NaN values
 - Remove rows based on condition
 - Convert columns to correct type (pd.to_numeric, pt_to.datetime)
-### Data processing (augmentation and transformation of columns)
+#### Data processing (augmentation and transformation of columns)
 - Extract month, hour, and minute from datetime
 - Extract city from a full address
-### Data exploration and analysis
+#### Data exploration and analysis
 - **Explored metrics/business questions:**
     1. Best month for sales and how much was earned
     2. City with the highest number of sales
