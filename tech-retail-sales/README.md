@@ -13,7 +13,7 @@ In this project, I use Python, Pandas, and Matplotlib to analyze and answer busi
 - Remove NaN values
 - Remove rows based on condition
 - Convert columns to correct type (pd.to_numeric, pt_to.datetime)
-#### Data processing (augmentation and transformation of columns)
+#### Data processing/feature engineering (augmentation and transformation of columns)
 - Extract month, hour, and minute from datetime
 - Extract city from a full address
 #### Data exploration and analysis
