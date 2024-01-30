@@ -1,5 +1,5 @@
 # Tech Retail Sales Analysis with Python :technologist:
-Jupyter Notebook: ![](https://github.com/martintthai/data-analysis-projects/blob/main/tech-retail-sales/Tech%20Retail%20Sales%20Analysis.ipynb)
+Jupyter Notebook: <https://github.com/martintthai/data-analysis-projects/blob/main/tech-retail-sales/Tech%20Retail%20Sales%20Analysis.ipynb>
 ## Introduction/Background:
 In this project, I use Python, Pandas, and Matplotlib to analyze and answer business questions about 12 months' worth of tech retail sales data. The data contains thousands of electronic store purchases broken down by product type, quantity ordered, price of each product, order date, and purchase address. 
 ### Skills applied:
