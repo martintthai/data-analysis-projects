@@ -1,22 +1,22 @@
 # Tech Retail Sales Analysis with Python :technologist:
 ## Introduction/Background:
 In this project, I use Python, Pandas, and Matplotlib to analyze and answer business questions about 12 months' worth of tech retail sales data. The data contains thousands of electronic store purchases broken down by product type, quantity ordered, price of each product, order date, and purchase address. 
-## Tools Used:
-Python
-Python Pandas
-Python Matplotlib
-## Skills applied:
+### Skills applied:
 - Data analysis
 - Data pre-processing
 - Data visualization
-## Data cleaning
+#### Tools Used:
+- Python
+- Python Pandas
+- Python Matplotlib
+### Data cleaning
 - Remove NaN values
 - Remove rows based on condition
 - Convert columns to correct type (pd.to_numeric, pt_to.datetime)
-## Data processing (augmentation and transformation of columns)
+### Data processing (augmentation and transformation of columns)
 - Extract month, hour, and minute from datetime
 - Extract city from a full address
-## Data exploration and analysis
+### Data exploration and analysis
 - **Explored metrics/business questions:**
     1. Best month for sales and how much was earned
     2. City with the highest number of sales
