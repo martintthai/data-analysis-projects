@@ -6,5 +6,6 @@
 | [Tech Retail Sales Analysis](https://github.com/martintthai/data-analysis-projects/tree/main/tech-retail-sales) :technologist: | Python, Pandas, Matplotlib | Data preprocessing, Feature Engineering, Data Analysis, Data Visualization | Analyzed 12 months worth of electronic store purchases to answer various business questions |
 | [Customer Behavior Analysis for Restaurants](https://github.com/martintthai/data-analysis-projects/tree/main/dannys-diner) :man_cook: | SQL | Data analysis | Used customer behavior data to evaluate effectiveness of a restaurant loyalty program with MySQL |
 | [Bike Sales Analysis](https://github.com/martintthai/data-analysis-projects/tree/main/bike-sales) :mountain_bicyclist: | Microsoft Excel | Data cleaning, Data Analysis, Data Visualization | Used advanced functions and pivot tables to clean and analyze bike sale data, as well as build a dynamic dashboard to identify key metrics and visually transform data into easily understandable insights |
+| [Airbnb Dashboard](https://public.tableau.com/app/profile/martin.thai/viz/AirBnbFullProject_17056971704300/Dashboard1) :house_with_garden: | Tableau | Data Visualization | Created a dashboard aimed at assisting individuals interested in renting out properties on Airbnb by visualizing insights into the most profitable areas and the optimal number of bedrooms for maximizing profit |
 
 
