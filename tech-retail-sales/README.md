@@ -5,11 +5,11 @@ In this project, I use Python, Pandas, and Matplotlib to analyze and answer busi
 - Data analysis
 - Data pre-processing
 - Data visualization
-#### Tools Used:
+##### Tools Used:
 - Python
 - Python Pandas
 - Python Matplotlib
-### Data cleaning
+#### Data cleaning
 - Remove NaN values
 - Remove rows based on condition
 - Convert columns to correct type (pd.to_numeric, pt_to.datetime)
