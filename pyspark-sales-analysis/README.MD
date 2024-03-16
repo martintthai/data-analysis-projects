@@ -1,4 +1,4 @@
-# Sales Analysis with PySpark in Databricks
+# Sales Analysis with PySpark in Databricks :fireworks:
 
 ***Below is the link to the dashboard displaying the KPIs***
 
