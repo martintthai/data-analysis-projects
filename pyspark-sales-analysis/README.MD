@@ -6,7 +6,7 @@
 
 ## Introduction:
 
-In this project, I used **PySpark** to load, clean, transform, and analyze sales data for a business that needs me to build certain KPIs. By leveraging joins, aggregations, and data transformation/cleaning techniques, I was able to do so and provide analytical insights to drive growth for the business.
+In this project, I used **PySpark** to load, clean, transform, and analyze sales data for a business that needed me to build certain KPIs. By leveraging joins, aggregations, and data transformation/cleaning techniques, I was able to do so and provide analytical insights to drive growth for the business.
 
 ## Data:
 
